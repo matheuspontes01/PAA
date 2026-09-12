@@ -10,38 +10,13 @@ complexidade teorica.
 Os experimentos, o CSV e as tabelas usam **apenas a biblioteca padrao do
 Python** (3.9+). O `matplotlib` e necessario so para os graficos.
 
-**Se o matplotlib ja estiver instalado**, nao e preciso fazer nada. Confira
-com:
-
-```bash
-python -c "import matplotlib; print(matplotlib.__version__)"
-```
-
-No Arch Linux ele normalmente ja vem pelo pacman (pacote
-`python-matplotlib`). Note que nessas distribuicoes o `pip install` no
-Python do sistema e bloqueado (PEP 668, arquivo `EXTERNALLY-MANAGED`) e
-falha com `error: externally-managed-environment` - use o gerenciador da
-distribuicao ou uma venv.
-
-**Com ambiente virtual** (recomendado para rodar em outra maquina ou para
-entregar o trabalho):
+**Com ambiente virtual**:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+source .venv/bin/activate         
 pip install -r requirements.txt
 ```
-
-Se o matplotlib ja estiver no sistema e voce quiser so isolar o projeto sem
-baixa-lo de novo:
-
-```bash
-python -m venv --system-site-packages .venv
-source .venv/bin/activate
-```
-
-Para sair da venv depois: `deactivate`.
-
 ## Como rodar
 
 ```bash
