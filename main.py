@@ -6,6 +6,8 @@ Exemplos:
                                              tabelas e os graficos
     python main.py start --quick             versao curta, para conferir
     python main.py run --sizes 100,1000,10000 --repeats 5
+                                             escolhe os tamanhos e o
+                                             numero de repeticoes
     python main.py run --with-variants       inclui o Quick Sort com pivo
                                              no ultimo elemento (pior caso)
     python main.py tables                    so refaz as tabelas do CSV
