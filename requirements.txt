@@ -1,10 +1,1 @@
-# Dependencias do trabalho.
-#
-# Os experimentos, o CSV e as tabelas (main.py run / tables) usam apenas a
-# biblioteca padrao do Python. O matplotlib e necessario so para os
-# graficos (main.py charts, e portanto main.py start).
-#
-# No Arch Linux o matplotlib ja costuma vir instalado pelo pacman
-# (pacote python-matplotlib) - nesse caso nao e preciso instalar nada.
-
 matplotlib>=3.5
