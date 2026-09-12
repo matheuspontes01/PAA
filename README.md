@@ -23,11 +23,12 @@ pip install -r requirements.txt
 python main.py start             # experimentos + tabelas + graficos
 python main.py start --quick     # versao curta (n ate 2.000), para conferir
 python main.py algorithms        # catalogo e complexidades
+python main.py start --quadratic-limit 100000 --csv completo.csv #Roda o buble e o insertion incluindo os 100.000 elementos
+python main.py run --sizes 100,1000,10000 --repeats 5   # escolhendo tamanhos e repeticoes
+python main.py run --with-variants                      # inclui o Quick Sort de pior caso
+python main.py tables                                   # so refaz analise.md
+python main.py charts                                   # so refaz os graficos
 
-python main.py run --sizes 100,1000,10000 --repeats 5
-python main.py run --with-variants        # inclui o Quick Sort de pior caso
-python main.py tables                     # so refaz analise.md
-python main.py charts                     # so refaz os graficos
 ```
 
 | Comando | O que faz |
@@ -57,6 +58,7 @@ bubble_sort.py  insertion_sort.py  merge_sort.py  quick_sort.py
                 um algoritmo por arquivo
 experimento.py  catalogo + entradas + medicao + execucao -> resultados.csv
 relatorio.py    tabelas (-> analise.md) e graficos (-> graficos/)
+python main.py start --quadratic-limit 100000 --csv
 main.py         linha de comando
 ```
 
